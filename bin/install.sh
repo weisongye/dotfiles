@@ -185,6 +185,7 @@ base_min() {
 		xcompmgr \
 		xz-utils \
 		zip \
+		shellcheck \
 		--no-install-recommends
 
 	apt autoremove
