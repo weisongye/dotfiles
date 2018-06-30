@@ -48,14 +48,14 @@ setup_sources_min() {
 
 	# hack for latest git (don't judge)
 	cat <<-EOF > /etc/apt/sources.list.d/git-core.list
-	deb http://ppa.launchpad.net/git-core/ppa/ubuntu xenial main
-	deb-src http://ppa.launchpad.net/git-core/ppa/ubuntu xenial main
+	deb http://ppa.launchpad.net/git-core/ppa/ubuntu bionic main
+	deb-src http://ppa.launchpad.net/git-core/ppa/ubuntu bionic main
 	EOF
 
 	# neovim
 	cat <<-EOF > /etc/apt/sources.list.d/neovim.list
-	deb http://ppa.launchpad.net/neovim-ppa/unstable/ubuntu xenial main
-	deb-src http://ppa.launchpad.net/neovim-ppa/unstable/ubuntu xenial main
+	deb http://ppa.launchpad.net/neovim-ppa/unstable/ubuntu bionic main
+	deb-src http://ppa.launchpad.net/neovim-ppa/unstable/ubuntu bionic main
 	EOF
 
 	# add the git-core ppa gpg key
@@ -91,8 +91,8 @@ setup_sources() {
 	deb-src http://httpredir.debian.org/debian experimental main contrib non-free
 
 	# yubico
-	deb http://ppa.launchpad.net/yubico/stable/ubuntu xenial main
-	deb-src http://ppa.launchpad.net/yubico/stable/ubuntu xenial main
+	deb http://ppa.launchpad.net/yubico/stable/ubuntu bionic main
+	deb-src http://ppa.launchpad.net/yubico/stable/ubuntu bionic main
 
 	# tlp: Advanced Linux Power Management
 	# http://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html
