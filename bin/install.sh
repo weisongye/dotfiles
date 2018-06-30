@@ -75,20 +75,16 @@ setup_sources() {
 	setup_sources_min;
 
 	cat <<-EOF > /etc/apt/sources.list
-	deb http://httpredir.debian.org/debian buster main contrib non-free
-	deb-src http://httpredir.debian.org/debian/ buster main contrib non-free
-
-	deb http://httpredir.debian.org/debian/ buster-updates main contrib non-free
-	deb-src http://httpredir.debian.org/debian/ buster-updates main contrib non-free
-
-	deb http://security.debian.org/ buster/updates main contrib non-free
-	deb-src http://security.debian.org/ buster/updates main contrib non-free
-
-	#deb http://httpredir.debian.org/debian/ jessie-backports main contrib non-free
-	#deb-src http://httpredir.debian.org/debian/ jessie-backports main contrib non-free
-
-	deb http://httpredir.debian.org/debian experimental main contrib non-free
-	deb-src http://httpredir.debian.org/debian experimental main contrib non-free
+	deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted
+	deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted
+	deb http://mirrors.aliyun.com/ubuntu/ bionic universe
+	deb http://mirrors.aliyun.com/ubuntu/ bionic-updates universe
+	deb http://mirrors.aliyun.com/ubuntu/ bionic multiverse
+	deb http://mirrors.aliyun.com/ubuntu/ bionic-updates multiverse
+	deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+	deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted
+	deb http://mirrors.aliyun.com/ubuntu/ bionic-security universe
+	deb http://mirrors.aliyun.com/ubuntu/ bionic-security multiverse
 
 	# yubico
 	deb http://ppa.launchpad.net/yubico/stable/ubuntu bionic main
