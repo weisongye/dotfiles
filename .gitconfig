@@ -217,3 +217,11 @@
 
 [commit]
 	gpgsign = false
+
+
+[user]
+        name = Wei Songye
+        email = weisongye@hotmail.com
+[github]
+        user = weisongye
+
