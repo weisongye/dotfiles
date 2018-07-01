@@ -564,7 +564,7 @@ get_dotfiles() {
 	cd "$HOME"
 
 	# install dotfiles from repo
-	git clone git@github.com:jessfraz/dotfiles.git "${HOME}/dotfiles"
+	git clone git@github.com:weisongye/dotfiles.git "${HOME}/dotfiles"
 	cd "${HOME}/dotfiles"
 
 	# installs all the things
@@ -591,7 +591,7 @@ install_vim() {
 
 	# install .vim files
 	sudo rm -rf "${HOME}/.vim"
-	git clone --recursive git@github.com:jessfraz/.vim.git "${HOME}/.vim"
+	git clone --recursive git@github.com:weisongye/.vim.git "${HOME}/.vim"
 	(
 	cd "${HOME}/.vim"
 	make install
