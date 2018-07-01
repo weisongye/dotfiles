@@ -11,6 +11,9 @@
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
+	# Show the diff between working tree and index
+	dc = diff --cached
+
 	# `git di $number` shows the diff between the state `$number` revisions ago and the current state
 	di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
 
@@ -102,6 +105,7 @@
 	# up = !git pull origin master && git remote prune origin && git submodule update --init --recursive
 	up = pull --rebase
 	undo = !git reset HEAD~1 --mixed
+	resethard = reset --hard
 	top = !git log --format=format:%an | sort | uniq -c | sort -r | head -n 20
 
 	# from trevor bramble https://twitter.com/TrevorBramble/status/774292970681937920
