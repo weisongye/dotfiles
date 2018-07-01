@@ -184,6 +184,7 @@ base_min() {
 		ncurses-term \
 		net-tools \
 		neovim \
+		openssh-server \
 		patch \
 		pinentry-curses \
 		rsync \
