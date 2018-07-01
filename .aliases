@@ -19,18 +19,34 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
 # Easier navigation: .., ..., ...., ....., ~ and -
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
+alias ..="cd .. && pwd && ls"
+alias ...="cd ../.. && pwd && ls"
+alias ....="cd ../../.. && pwd && ls"
+alias .....="cd ../../../.. && pwd && ls"
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
+alias amend="git commit -s --amend"
+alias b="git branch"
+alias back="cd -"
+alias cpuinfo="cat /proc/cpuinfo"
 alias dl="cd ~/Downloads"
-alias g="git"
+alias f="find"
+alias fn="find -name"
+alias g="grep -nr"
+alias gclean="git clean -fd"
 alias h="history"
 alias gc=". /usr/local/bin/gitdate && git commit -v "
+alias m="make"
+alias meminfo="cat /proc/meminfo"
+
+alias mclean="make clean"
+alias pull="git pull --rebase"
+alias push="git push origin"
+alias rfc="repo forall -c"
+alias s="git status -s"
+alias t="htop"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

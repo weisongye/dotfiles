@@ -295,7 +295,7 @@ hollywood(){
 		--name hollywood \
 		${DOCKER_REPO_PREFIX}/hollywood
 }
-htop(){
+docker-htop(){
 	docker run --rm -it \
 		--pid host \
 		--net none \
