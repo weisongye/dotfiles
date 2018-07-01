@@ -134,24 +134,38 @@ base_min() {
 
 	apt install -y \
 		adduser \
+		autoconf \
 		automake \
+		asciidoc \
 		bash-completion \
 		bc \
+		binutils \
+		bison \
+		build-essential \
 		bzip2 \
 		ca-certificates \
 		coreutils \
+		cppcheck \
 		curl \
 		dnsutils \
+		dos2unix \
+		flex \
 		file \
 		findutils \
 		gcc \
+		gcc-multilib \
+		g++ \
+		g++-multilib \
+		gettext \
 		git \
 		gnupg \
 		gnupg2 \
 		gnupg-agent \
+		gawk \
 		grep \
 		gzip \
 		hostname \
+		libtool \
 		indent \
 		iptables \
 		iwd \
@@ -159,29 +173,43 @@ base_min() {
 		less \
 		libc6-dev \
 		libimobiledevice6 \
+		libncurses5-dev \
+		libssl-dev \
+		libz-dev \
 		locales \
 		lsof \
 		make \
+		mercurial \
 		mount \
+		ncurses-term \
 		net-tools \
 		neovim \
+		patch \
 		pinentry-curses \
+		rsync \
 		rxvt-unicode-256color \
 		scdaemon \
+		sharutils \
+		shellcheck \
 		silversearcher-ag \
+		sphinx-common \
 		ssh \
 		strace \
+		subversion \
 		sudo \
 		tar \
+		texinfo \
 		tree \
 		tzdata \
+		unix2dos \
 		usbmuxd \
 		unzip \
+		wget \
 		xclip \
 		xcompmgr \
 		xz-utils \
+		zlib1g-dev
 		zip \
-		shellcheck \
 		--no-install-recommends
 
 	apt autoremove
