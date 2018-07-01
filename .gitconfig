@@ -37,6 +37,7 @@
 
 	# Commit
 	ci = commit -s
+	cm = commit -s -m
 
 	# Cherry-Pick
 	cherrypick = cherry-pick -x
